@@ -1,0 +1,15 @@
+{
+    "eBay" : {
+        "apikey": "Qlio1a92e-fea5-485d-bcdb-1140ee96527"
+    },
+
+    "tables" : {
+    	 "ebay" : {
+             "finding" : {
+                 "gateway": "http://svcs.ebay.com/services/search/FindingService/v1",
+                 "appname": "YOUR APP NAME HERE" 
+             }
+	 }
+    }
+}
+

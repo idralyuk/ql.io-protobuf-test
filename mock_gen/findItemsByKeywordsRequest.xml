@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://www.ebay.com/marketplace/search/v1/services">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:findItemsByKeywordsRequest>
+         <ser:paginationInput>
+            <ser:pageNumber>1</ser:pageNumber>
+            <ser:entriesPerPage>50</ser:entriesPerPage>
+         </ser:paginationInput>
+         <ser:keywords>ipad</ser:keywords>
+      </ser:findItemsByKeywordsRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

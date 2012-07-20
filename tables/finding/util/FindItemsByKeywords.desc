@@ -1,0 +1,72 @@
+
+‹
+FindItemsByKeywords.proto7com.ebay.marketplace.search.v1.services.finditemservice"§
+FindItemsByKeywordsResponse
+ack (	
+version (	
+	timestamp (	[
+searchResult (2E.com.ebay.marketplace.search.v1.services.finditemservice.SearchResultc
+paginationOutput (2I.com.ebay.marketplace.search.v1.services.finditemservice.PaginationOutput
+itemSearchURL (	"[
+SearchResultK
+item (2=.com.ebay.marketplace.search.v1.services.finditemservice.Item"ï
+Item
+itemId (	
+title (	
+globalId (	
+subtitle (	a
+primaryCategory (2H.com.ebay.marketplace.search.v1.services.finditemservice.PrimaryCategory
+
+galleryURL (	
+viewItemURL (	
+	productId (	
+paymentMethod	 (	
+autoPay
+ (
+
+postalCode (	
+location (	
+country (	[
+shippingInfo (2E.com.ebay.marketplace.search.v1.services.finditemservice.ShippingInfo]
+sellingStatus (2F.com.ebay.marketplace.search.v1.services.finditemservice.SellingStatusY
+listingInfo (2D.com.ebay.marketplace.search.v1.services.finditemservice.ListingInfo
+returnsAccepted (U
+	condition (2B.com.ebay.marketplace.search.v1.services.finditemservice.Condition
+isMultiVariationListing (";
+PrimaryCategory
+
+categoryId (	
+categoryName (	"¬
+ShippingInfo
+shippingServiceCost (
+shippingType (	
+shipToLocations (	
+expeditedShipping (
+oneDayShippingAvailable (
+handlingTime (	"~
+SellingStatus
+currentPrice (
+convertedCurrentPrice (
+bidCount (
+sellingState (	
+timeLeft (	"À
+ListingInfo
+bestOfferEnabled (
+buyItNowAvailable (
+buyItNowPrice (
+convertedBuyItNowPrice (
+	startTime (	
+endTime (	
+listingType (	
+gift (">
+	Condition
+conditionId (	
+conditionDisplayName (	"h
+PaginationOutput
+
+pageNumber (
+entriesPerPage (
+
+totalPages (
+totalEntries (Bc
+=com.ebay.marketplace.search.v1.services.finditemservice.protoB FindItemsByKeywordsResponseProtoH

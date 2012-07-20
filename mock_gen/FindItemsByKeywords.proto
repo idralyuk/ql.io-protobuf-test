@@ -1,0 +1,85 @@
+package com.ebay.marketplace.search.v1.services.finditemservice;
+
+option optimize_for = SPEED;
+option java_package = "com.ebay.marketplace.search.v1.services.finditemservice.proto";
+option java_outer_classname = "FindItemsByKeywordsResponseProto";
+
+message FindItemsByKeywordsResponse {
+  required string ack = 1;
+  required string version = 2;
+  required string timestamp = 3;
+  required SearchResult searchResult = 4;
+  required PaginationOutput paginationOutput = 5;
+  required string itemSearchURL = 6;
+}
+
+message SearchResult {
+  repeated Item item = 1;
+}
+
+message Item {
+  required string itemId = 1;
+  required string title = 2;
+  required string globalId = 3;
+  optional string subtitle = 4;
+  required PrimaryCategory primaryCategory = 5;
+  optional string galleryURL = 6;
+  optional string viewItemURL = 7;
+  optional string productId = 8;
+  required string paymentMethod = 9;
+  optional bool autoPay = 10;
+  optional string postalCode = 11;
+  required string location = 12;
+  optional string country = 13;
+  required ShippingInfo shippingInfo = 14;
+  required SellingStatus sellingStatus = 15;
+  required ListingInfo listingInfo = 16;
+  required bool returnsAccepted = 17;
+  required Condition condition = 18;
+  optional bool isMultiVariationListing = 19;
+}
+
+message PrimaryCategory {
+  required string categoryId = 1;
+  required string categoryName = 2;
+}
+
+message ShippingInfo {
+  optional float shippingServiceCost = 1;
+  optional string shippingType = 2;
+  optional string shipToLocations = 3;
+  optional bool expeditedShipping = 4;
+  optional bool oneDayShippingAvailable = 5;
+  optional string handlingTime = 6;
+}
+
+message SellingStatus {
+  required float currentPrice = 1;
+  required float convertedCurrentPrice = 2;
+  optional int32 bidCount = 3;
+  required string sellingState = 4;
+  required string timeLeft = 5;
+}
+
+message ListingInfo {
+  optional bool bestOfferEnabled = 1;
+  optional bool buyItNowAvailable = 2;
+  optional float buyItNowPrice = 3;
+  optional float convertedBuyItNowPrice = 4;
+  optional string startTime = 5;
+  optional string endTime = 6;
+  optional string listingType = 7;
+  optional bool gift = 8;
+}
+
+message Condition {
+  optional string conditionId = 1;
+  optional string conditionDisplayName = 2;
+}
+
+message PaginationOutput {
+  required int32 pageNumber = 1;
+  required int32 entriesPerPage = 2;
+  required int32 totalPages = 3;
+  required int32 totalEntries = 4;
+}
